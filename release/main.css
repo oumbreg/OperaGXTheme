@@ -297,7 +297,6 @@ code,
 
 #app-mount,
 #app-mount :where(._160d8e55254637e5-app,
-._960e4207cea8323e-bg,
 ._5e434347c823b592-guilds,
 .ef3116c2da186559-scroller,
 ._5e434347c823b592-sidebar,
@@ -339,6 +338,18 @@ code,
 ._36d072eab2b2e737-scrollerInner > ._6c79861fd96f56b1-wrapper .fc817765600a960a-wrapper) {
   background-color: transparent;
   background: transparent;
+}
+
+/* Transition Killer */
+#app-mount ._960e4207cea8323e-layer {
+  -webkit-transform: none !important;
+          transform: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+  -webkit-animation: none !important;
+          animation: none !important;
+  top: 0 !important;
+  padding-top: 0 !important;
 }
 
 /* Fixes transparency not workking*/
@@ -3248,7 +3259,7 @@ code.inline {
 ._2ea32c412048f708-modeSelected ._2ea32c412048f708-icon path,
 ._2ea32c412048f708-modeSelected:hover ._2ea32c412048f708-icon,
 ._2ea32c412048f708-modeSelected:hover ._2ea32c412048f708-icon path) {
-  fill: rgb(var(--fullwhite-font)) !important;
+  fill: rgb(222,67,100) !important;
 }
 
 #app-mount ._2ea32c412048f708-modeSelected:hover ._2ea32c412048f708-name {
